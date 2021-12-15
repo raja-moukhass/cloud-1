@@ -9,3 +9,4 @@ https://codeblog.dotsandbrackets.com/ansible-vagrant/ (how to use ansible and va
 https://www.coachdevops.com/2021/07/ansible-playbook-for-provisioning-new.html (install anisble on ubuntu)
 
 
+https://www.youtube.com/watch?v=9pZ2xmsSDdo&ab_channel=TechWorldwithNana (the most importnat road map)
