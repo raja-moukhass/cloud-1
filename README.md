@@ -13,3 +13,5 @@ https://www.youtube.com/watch?v=9pZ2xmsSDdo&ab_channel=TechWorldwithNana (the mo
 
 
 https://apeksh742.medium.com/deploying-web-server-on-docker-using-ansible-on-ec2-instance-4b898770f4e1 (deploy application using ansible)
+
+https://tutorialworks-bin.s3.amazonaws.com/devops-visual-guide.pdf (devops road map)
