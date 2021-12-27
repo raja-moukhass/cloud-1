@@ -1,3 +1,4 @@
+
 ---
  - name:  provisioning EC2 instances using Ansible
    hosts: localhost
@@ -8,17 +9,17 @@
    vars:
      keypair: raja-moukhass
      instance_type: t2.small
-     image: ami-020db2c14939a8efb # go to aws and grab iam fromthe ubuntu instance you gonna launch 
+     image: ami-03a0c45ebc70f98ea
      wait: yes
      group: webserver
      count: 1
      region: us-east-2
      security_group: my-jenkins-security-grp
-   
+
    tasks:
 
      - name: Task # 1 - Create my security group
-       local_action: 
+       local_action:
          module: ec2_group
          name: "{{ security_group }}"
          description: Security Group for webserver Servers
@@ -41,12 +42,12 @@
               cidr_ip: 0.0.0.0/0
        register: basic_firewall
      - name: Task # 2 Launch the new EC2 Instance
-       local_action:  ec2 
-                      group={{ security_group }} 
-                      instance_type={{ instance_type}} 
-                      image={{ image }} 
-                      wait=true 
-                      region={{ region }} 
+       local_action:  ec2
+                      group={{ security_group }}
+                      instance_type={{ instance_type}}
+                      image={{ image }}
+                      wait=true
+                      region={{ region }}
                       keypair={{ keypair }}
                       count={{count}}
        register: ec2
@@ -56,3 +57,18 @@
        args:
          tags:
            Name: MyTargetEc2Instance
+
+
+     - name: Install docker and some dependencies
+       apt:
+        name: python3-pip, docker.io
+        state: present
+
+     - name: Start docker service
+       service:
+        name: docker
+        state: started
+
+     - name: Install docker python module
+       pip:
+        name: docker
