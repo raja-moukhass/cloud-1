@@ -26,4 +26,4 @@ https://ramitsurana.github.io/ansible-ec2-docker-deployment/
 https://medium.datadriveninvestor.com/devops-using-ansible-to-provision-aws-ec2-instances-3d70a1cb155f (create an ec2 instance using ansible all the steps)
 
 
-
+https://medium.com/swlh/configuring-web-server-on-ec2-instance-using-ansible-in-one-click-83139c4cc55e (install web server using anible)
