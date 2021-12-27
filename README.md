@@ -22,3 +22,8 @@ https://www.linkedin.com/pulse/deploy-wordpress-amazon-rds-using-ansible-deepak-
 
 
 https://ramitsurana.github.io/ansible-ec2-docker-deployment/
+
+https://medium.datadriveninvestor.com/devops-using-ansible-to-provision-aws-ec2-instances-3d70a1cb155f (create an ec2 instance using ansible all the steps)
+
+
+
