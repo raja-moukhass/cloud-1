@@ -15,3 +15,15 @@ https://www.youtube.com/watch?v=9pZ2xmsSDdo&ab_channel=TechWorldwithNana (the mo
 https://apeksh742.medium.com/deploying-web-server-on-docker-using-ansible-on-ec2-instance-4b898770f4e1 (deploy application using ansible)
 
 https://tutorialworks-bin.s3.amazonaws.com/devops-visual-guide.pdf (devops road map)
+
+https://www.javatpoint.com/aws-tutorial (short tutorial aws)
+
+https://www.linkedin.com/pulse/deploy-wordpress-amazon-rds-using-ansible-deepak-kumar-pandia
+
+
+https://ramitsurana.github.io/ansible-ec2-docker-deployment/
+
+https://medium.datadriveninvestor.com/devops-using-ansible-to-provision-aws-ec2-instances-3d70a1cb155f (create an ec2 instance using ansible all the steps)
+
+
+
