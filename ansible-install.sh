@@ -17,4 +17,21 @@ sudo apt-get install python3-boto -y
 
 #(the above command should display an output show u boto versions 
 
+
 pip list boto | grep boto
+
+
+#create ansible playbook
+
+sudo vim /etc/ansible/hosts >> 
+
+[localhost]
+local
+sudo vi create_ec2.yml 
+
+#aply the playbook
+
+sudo ansible-playbook create_ec2.yml
+
+pip install --upgrade requests==2.20.1
+
