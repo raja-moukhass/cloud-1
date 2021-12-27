@@ -17,3 +17,8 @@ https://apeksh742.medium.com/deploying-web-server-on-docker-using-ansible-on-ec2
 https://tutorialworks-bin.s3.amazonaws.com/devops-visual-guide.pdf (devops road map)
 
 https://www.javatpoint.com/aws-tutorial (short tutorial aws)
+
+https://www.linkedin.com/pulse/deploy-wordpress-amazon-rds-using-ansible-deepak-kumar-pandia
+
+
+https://ramitsurana.github.io/ansible-ec2-docker-deployment/
