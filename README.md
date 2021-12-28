@@ -27,3 +27,5 @@ https://medium.datadriveninvestor.com/devops-using-ansible-to-provision-aws-ec2-
 
 
 https://medium.com/swlh/configuring-web-server-on-ec2-instance-using-ansible-in-one-click-83139c4cc55e (install web server using anible)
+
+https://medium.com/swlh/getting-started-with-ansible-ee31be8c6a75 (get started with ansible **import)
