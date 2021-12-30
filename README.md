@@ -31,3 +31,6 @@ https://medium.com/swlh/configuring-web-server-on-ec2-instance-using-ansible-in-
 https://medium.com/swlh/getting-started-with-ansible-ee31be8c6a75 (get started with ansible **import)
  
  https://levelup.gitconnected.com/cloud-provisioning-and-app-deployment-to-aws-using-ansible-56f00fc0d36d (create a web application)
+
+
+https://blog.gruntwork.io/a-comprehensive-guide-to-authenticating-to-aws-on-the-command-line-63656a686799 A Comprehensive Guide to Authenticating to AWS on the Command Line
