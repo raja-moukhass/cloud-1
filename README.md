@@ -9,6 +9,7 @@ https://codeblog.dotsandbrackets.com/ansible-vagrant/ (how to use ansible and va
 https://www.coachdevops.com/2021/07/ansible-playbook-for-provisioning-new.html (install anisble on ubuntu)
 
 
+
 https://www.youtube.com/watch?v=9pZ2xmsSDdo&ab_channel=TechWorldwithNana (the most importnat road map)
 
 
@@ -39,4 +40,6 @@ https://blog.gruntwork.io/a-comprehensive-guide-to-authenticating-to-aws-on-the-
 
 https://github.com/jamesattard/docker-ansible-wordpress (deployment using ansible very important)
 
-https://www.redhat.com/sysadmin/container-images-ansible 
+https://www.redhat.com/sysadmin/container-images-ansible
+
+https://subscription.packtpub.com/book/virtualization-and-cloud/9781788295826/1/ch01lvl1sec04/executing-the-ansible-command-line-to-check-connectivity
