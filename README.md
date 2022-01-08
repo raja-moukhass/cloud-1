@@ -38,3 +38,5 @@ https://blog.gruntwork.io/a-comprehensive-guide-to-authenticating-to-aws-on-the-
 
 
 https://github.com/jamesattard/docker-ansible-wordpress (deployment using ansible very important)
+
+https://www.redhat.com/sysadmin/container-images-ansible 
