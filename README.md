@@ -43,3 +43,5 @@ https://github.com/jamesattard/docker-ansible-wordpress (deployment using ansibl
 https://www.redhat.com/sysadmin/container-images-ansible
 
 https://subscription.packtpub.com/book/virtualization-and-cloud/9781788295826/1/ch01lvl1sec04/executing-the-ansible-command-line-to-check-connectivity
+
+https://resumeworded.com/results-v2
