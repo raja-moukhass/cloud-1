@@ -1,5 +1,5 @@
 ---
-# tasks file for ec2-provesion
+# tasks file for ec2-provision
 
 - name: Create security group
   ec2_group:
@@ -42,6 +42,6 @@
         Name: "{{ project_name }}-lw"
     count_tag: Name
     exact_count: 1
-    vpc_subnet_id: subnet-09622380a8c40c5c2
+    vpc_subnet_id: subnet-0fa08dbf11265328d
     assign_public_ip: yes
   register: ec2

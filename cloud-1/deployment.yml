@@ -1,0 +1,7 @@
+- hosts: all
+  remote_user: ubuntu
+  become: true
+  roles:
+          #- setup_env
+      - build_images
+      - deploy_containers
