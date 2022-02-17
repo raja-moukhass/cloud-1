@@ -1,4 +1,12 @@
 - hosts: all
   remote_user: root
+  #roles:
+  #   - ec2-provision 
+  vars_files: vault.yml
   roles:
-      - ec2-provision                        
+       - {
+           
+               role: ec2-provision,
+               AWS_ACCESS_KEY_ID: "{{AWS_ACCESS_KEY_ID}}",
+               AWS_SECRET_ACCESS_KEY: "{{AWS_SECRET_KEY}}",
+         }
