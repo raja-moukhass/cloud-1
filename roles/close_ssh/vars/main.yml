@@ -1,0 +1,8 @@
+---
+# vars file for close_ssh
+
+region: ap-south-1
+instance_type: t2.micro
+ami: ami-0851b76e8b1bce90b
+project_name: cloud-1
+

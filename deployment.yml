@@ -1,0 +1,23 @@
+- hosts: all
+  remote_user: ubuntu
+  become: true
+  roles:
+      - setup_env
+      - build_images
+  vars_files: vault.yml
+
+  roles:
+          - {
+                  role: deploy_containers,
+                  MYSQL_ROOT_PASSWORD: "{{MARIADB_ROOT_PASSWORD}}",
+                  MYSQL_PASSWORD: "{{MARIADB_PASSWORD}}",
+                  MYSQL_DATABASE: "{{MARIADB_DATABASE}}",
+                  MYSQL_USER: "{{MARIADB_USER}}",
+                  WORDPRESS_DB_NAME: "{{MARIADB_DB_NAME}}",
+                  WORDPRESS_DB_USER: "{{MARIADB_DB_USER}}",
+                  WORDPRESS_DB_PASSWORD: "{{MARIADB_DB_PASSWORD}}",
+                  WORDPRESS_DB_HOST: "{{WORDPRESS_DB}}",
+          
+          
+          
+            }  

@@ -1,0 +1,42 @@
+---
+# tasks file for deploy_containers
+
+
+  - name: Deploy mariadb server
+    docker_container:
+      image: mariadb
+      name: mariadb
+      restart_policy: always
+      volumes: /home/ununtu/mariadb:/var/lib/mysql
+      env:
+             MYSQL_ROOT_PASSWORD: '{{MYSQL_ROOT_PASSWORD}}'
+             MYSQL_PASSWORD: '{{MYSQL_PASSWORD}}'
+             MYSQL_DATABASE: '{{MYSQL_DATABASE}}'
+             MYSQL_USER: '{{MYSQL_USER}}'
+
+
+    register: mariadb_container
+
+
+  - name: deploy wordpress server
+    docker_container:
+            image: my-wordpress
+            name: wordpress
+            restart_policy: always
+            ports:
+                    - "80:80"
+            env:
+                           
+                    WORDPRESS_DB_NAME: '{{WORDPRESS_DB_NAME}}'
+                    WORDPRESS_DB_USER: '{{WORDPRESS_DB_USER}}'
+                    WORDPRESS_DB_PASSWORD: '{{WORDPRESS_DB_PASSWORD}}'
+                    WORDPRESS_DB_HOST: '{{WORDPRESS_DB_HOST}}'
+                    WORDPRESS_DB_HOST: "{{ mariadb_container['container']['NetworkSettings']['IPAddress'] }}"
+
+            volumes: /home/ununtu/wordpress:/var/www/html
+
+
+  - name: Debug
+    debug:
+      var: mariadb_container['container']['NetworkSettings']['IPAddress']
+
