@@ -21,4 +21,7 @@
   - name: Install docker python module
     pip:
       name: docker
+  - name: chmod 666 /var/run/docker.sock
+    shell: chmod 666 /var/run/docker.sock
+    become: true
 
