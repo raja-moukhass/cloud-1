@@ -45,6 +45,8 @@
     vpc_subnet_id: subnet-0fa08dbf11265328d
     assign_public_ip: yes
   register: ec2
+- name: Refresh EC2 cache
+  command: /home/ramoukha/cloud-1/roles/dynamic_host/ec2.py --refresh-cache
 
 - name: Refresh in-memory EC2 cache
   meta: refresh_inventory
