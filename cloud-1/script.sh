@@ -16,7 +16,3 @@ sudo pip install boto boto3
 sudo apt-get install python3-boto -y
 pip list boto | grep boto
 
-# create public key 
-
-ssh-keygen
-
