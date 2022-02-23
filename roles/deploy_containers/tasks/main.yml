@@ -1,6 +1,10 @@
 ---
 # tasks file for deploy_containers
-
+   
+  
+  - name: create volume mariadb
+    docker_volume:
+      name: volume_mariadb
 
   - name: Deploy mariadb server
     docker_container:
@@ -17,6 +21,10 @@
 
     register: mariadb_container
 
+  
+  - name: create volume wordpress
+    docker_volume:
+     name: volume_wordpress
 
   - name: deploy wordpress server
     docker_container:
